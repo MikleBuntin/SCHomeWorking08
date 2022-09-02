@@ -48,16 +48,11 @@ void FromMaxToMin(int[,] matrix)
             
             for( ; i < matrix.GetLength(1); i++)
             {
-                if(matrix[stringIndex, i] > matrix[stringIndex, indexMax])
-                {
-                    indexMax = i;
-                }
-                                
+                if(matrix[stringIndex, i] > matrix[stringIndex, indexMax]) indexMax = i;                                
             }
             int temp = matrix[stringIndex, index];
             matrix[stringIndex, index] = matrix[stringIndex, indexMax];
             matrix[stringIndex, indexMax] = temp;
-
             
         }
         
